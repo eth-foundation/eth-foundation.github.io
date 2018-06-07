@@ -1,0 +1,84 @@
+table {
+  border-spacing: 1;
+  border-collapse: collapse;
+  /* background: white; */
+ /* overflow: hidden; */
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+table * {
+  position: relative;
+}
+table td, table th {
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+table caption {
+  font-size: 1.3em;
+  font-weight: bold;
+  padding: 16px;
+  text-align: left;
+  padding-left: 0;
+}
+table tfoot tr {
+  background: #eee;
+}
+table thead tr {
+  height: 60px;
+  background: #b7c8d2;
+  font-size: 16px;
+}
+table tfoot tr {
+  background: #aaa;
+}
+table tbody tr, table tfoot tr {
+  height: 38px;
+  border-bottom: 1px solid #E3F1D5;
+  box-shadow: 0px 0px 0px rgba(0,0,0,0);
+}
+td table {
+  box-shadow: initial; 
+  margin: 0;
+}
+table tbody tr:nth-child(even) {
+  background-color: #fff;
+}
+table tbody tr:nth-child(odd) {
+  background-color: #eee;
+}
+table tbody tr:last-child {
+  border: 0;
+}
+/*table tbody tr:hover {
+  background-color: #e1e2ff;
+  
+}*/
+table tbody tr:empty {
+    height: 10px;
+}
+table td, table th {
+  text-align: left;
+}
+table td.l, table th.l {
+  text-align: right;
+}
+table td.c, table th.c {
+  text-align: center;
+}
+table td.r, table th.r {
+  text-align: center;
+}
+blockquote {
+  color: white;
+  text-align: center;
+}
+table tbody td > button {
+  margin: 0;
+  width:100%;
+}
+@media (max-width: 768px) {
+    table td, table th {
+      display: block;
+    }
+}

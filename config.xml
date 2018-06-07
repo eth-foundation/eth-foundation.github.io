@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns     = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "com.gipertroniks.CryptoHrivnia"
+        version   = "1.0.0">
+    <name>Crypto Hrivnia Lite</name>
+    <description>
+        Crypto Hrivnia Lite
+    </description>
+    <author href="http://www.giper-troniks.com" email="support@giper-troniks.com">
+        Giper-Troniks Private Enterprise 2016 ©
+    </author>
+    <preference name="permissions" value="none"/>
+    <plugin name="cordova-plugin-whitelist" source="npm" spec="~1.2.1"/>
+    <plugin name="cordova-plugin-vibration" spec="~2.1.3" />
+    <plugin name="cordova-plugin-sim" source="npm"/>
+    <plugin name="cordova-plugin-dialogs" source="npm"/>
+    <plugin name="cordova-plugin-cszbar" source="npm"/>
+    <gap:plugin name="cordova-plugin-x-socialsharing" source="npm" />
+
+    <plugin name="onesignal-cordova-plugin" />
+    <!--Requires cli-5.1.1+ for gradle Android but we recommend using the latest version. -->
+    <preference name="android-build-tool" value="gradle" />
+
+    
+    <access origin="*"/>
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-navigation href="*"/>
+    <icon src="res/icone.png" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+        <preference name="Orientation" value="portrait" />
+    </platform>
+</widget>

@@ -1,0 +1,207 @@
+
+<!-- saved from url=(0064) -->
+<html>
+<head>
+<title>FDBB-cabinet</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
+
+	<link href="./css/tables.css" rel="stylesheet">
+	<link href="./css/range.css" rel="stylesheet">
+	<link href="./css/style-template.css" rel="stylesheet">
+	<link href="./css/mobile.css" rel="stylesheet">
+
+	<script type="text/javascript" src="./js/lib.js"></script>
+	<script type="text/javascript" src="./js/ethers.js"></script>
+	<script type="text/javascript" src="./js/eth-api.js"></script>
+</head>
+<body>
+<div class="menu">
+	<!-- h1>FDBB</h1 -->
+
+	<item id="home">
+		Home
+	</item>
+	<item id="auth-pk" style="display: none;">
+		Auth by private key
+	</item>
+	<item id="reg-new-wallet" style="display: none;">
+		Reg New Wallet
+	</item>
+	<item id="cabinet-accounts">
+		cabinet Accounts
+	</item>
+	<item id="CALC">
+		Calculator
+	</item>
+</div>
+<div class="header">
+	<span>Home</span>
+	<span class="curse-eth-usd">1 ETH = $<span id="ethPrice">. . .</span></span>
+</div>
+<content>
+	<page id="home">
+		<div>
+			<h1>Deposit plan 5%</h1>
+			<div class="ctr">
+				<h2>Token price</h2>
+				<h3 style="color: green;"><strong>1.002345 ETH / 1000 DT5</strong> (▲ 25.231%)</h3>
+				<p>Buy: 1.004345 ETH / 1000 DT5</p>
+				<p>Sell: 1.000345 ETH / 1000 DT5</p>
+				<p>Value: 254215 DT5</p>
+				<p>Ethers in deposits: 25421.3543540304355 eth</p>
+				<p>Contract address: 0x338c6906CE36Ec61B8a74364bB29eA6CA8CF12c9</p>
+				<div>
+					<button>Make Deposit</button>
+				</div>
+			</div>
+			<div>
+				<h3>lost transactions</h3>
+				<table>
+					<thead>
+						<tr><th>tx</th><th>from</th><th>to</th><th>ETH</th><th>DT5</th></tr>
+					</thead>
+					<tbody>
+					<tr><td>tx</td><td>from</td><td>to</td><td>ETH</td><td>DT5</td></tr>
+					<tr><td>tx</td><td>from</td><td>to</td><td>ETH</td><td>DT5</td></tr>
+					<tr><td>tx</td><td>from</td><td>to</td><td>ETH</td><td>DT5</td></tr>
+					<tr><td>tx</td><td>from</td><td>to</td><td>ETH</td><td>DT5</td></tr>
+					<tr><td>tx</td><td>from</td><td>to</td><td>ETH</td><td>DT5</td></tr>
+					<tr><td>tx</td><td>from</td><td>to</td><td>ETH</td><td>DT5</td></tr>
+					<tr><td>tx</td><td>from</td><td>to</td><td>ETH</td><td>DT5</td></tr>
+					<tr><td>tx</td><td>from</td><td>to</td><td>ETH</td><td>DT5</td></tr>
+					<tr><td>tx</td><td>from</td><td>to</td><td>ETH</td><td>DT5</td></tr>
+					<tr><td>tx</td><td>from</td><td>to</td><td>ETH</td><td>DT5</td></tr>
+					<tr><td>tx</td><td>from</td><td>to</td><td>ETH</td><td>DT5</td></tr>
+				</tbody></table>
+			</div>
+		</div>
+	</page>
+	<page id="auth-pk">
+		<div>
+			<h1 class="logo">FDBB</h1>
+			<div><button id="btnPK">Login with private key</button></div>
+			<div>
+				<label for="fileInput">Login use KeyStore file</label>
+				<input type="file" name="file" id="fileInput" class="inputfile" style="display: none;" />
+				
+			</div>
+			<hr>
+			<div><button id="createAcc">Create new account</button></div>
+		</div>
+	</page>
+	<page id="reg-new-wallet">
+		<div>
+			<div>
+				<h1>reg-new-wallet</h1>
+				<button>create wallet</button>
+				<hr>
+				<div>
+					<strong>account: </strong> 
+					0x338c6906CE36Ec61B8a74364bB29eA6CA8CF12c9
+				</div>
+				<div class="ctr">
+					<strong>privat key: </strong> 
+					<p>338c6906CE36Ec61B8a74364bB29eA6CA8CF12c9338c6906CE36Ec61B8a74364bB29eA6CA8CF12c9</p>
+				</div>
+
+			</div>
+		</div>
+	</page>
+	<page id="cabinet-accounts">
+		<!-- баланс в эфире
+		батанс в токенах -->
+		<h1 my-account></h1>
+		<table><tr style="font-size: 27px;"><td>
+			<strong>My ballance:</strong><br>
+		</td></tr><tr><td>
+			<strong>ETH:</strong>
+			<span eth-ballance> . . . </span>
+		</td></tr><tr><td>
+			<strong>DT5:</strong><br>
+			<span dt5-ballance> . . . </span>
+		</td></tr><tr><td>
+			<strong>Token Price:</strong><br>
+		</td></tr><tr><td style="color: green;">
+			<strong>Buy:</strong><br>
+			<span dt5-price-buy> . . . </span>
+		</td></tr><tr><td style="color: red;">
+			<strong>Sell:</strong><br>
+			<span dt5-price-sell> . . . </span>
+		</td></tr></table>
+		<table>
+		<tr><td>
+			<div>
+				<a href="#">max</a>
+				<input type="text" name="count">
+				<button>BUY</button>
+			</div>
+			<div>
+				<strong>Total tu pay: </strong><span>0.1293809 ETH</span>
+			</div>
+		</td><td>
+			<div>
+				<a href="#">max</a>
+				<input type="text" name="count">
+				<button>SELL</button>
+			</div>
+			<div>
+				<strong>Total tu pay: </strong><span>0.1293809 ETH</span>
+			</div>
+		</td></tr>
+		</table>
+		<div> <!-- АБЛИЦА ТРАНЗАКЦИЙ -->
+			<h3>lost transactions</h3>
+			<table>
+				<thead>
+					<tr><th>tx</th><th>from</th><th>to</th><th>ETH</th><th>DT5</th></tr>
+				</thead>
+				<tbody><tr><td>tx</td><td>from</td><td>to</td><td>ETH</td><td>DT5</td></tr>
+				<tr><td>tx</td><td>from</td><td>to</td><td>ETH</td><td>DT5</td></tr>
+				<tr><td>tx</td><td>from</td><td>to</td><td>ETH</td><td>DT5</td></tr>
+				<tr><td>tx</td><td>from</td><td>to</td><td>ETH</td><td>DT5</td></tr>
+				<tr><td>tx</td><td>from</td><td>to</td><td>ETH</td><td>DT5</td></tr>
+				<tr><td>tx</td><td>from</td><td>to</td><td>ETH</td><td>DT5</td></tr>
+			</tbody></table>
+		</div>
+	</page>
+	<page id="CALC">
+		<div>
+			<label>Выберите депозитный план:</label>
+			<table><tr style="cursor: pointer; background-color: #fff">
+				<td id="plan1" class="plan-calc">Депозитный план <strong>5%</strong></td>
+				<td id="plan2" class="plan-calc">Депозитный план <strong>10%</strong></td>
+				<td id="plan3" class="plan-calc">Депозитный план <strong>15%</strong></td>
+			</tr></table>
+			<label>Какую сумму вы вкладываете (<span class="curText"></span>)?</label>
+			<input id="__startDeposit" type="text" name="deposit" placeholder="0.0000" value="10">
+			<!-- span><big><strong> <span class="curText"></span></strong></big></span -->
+			<select id="SelectorCurrency">
+				<option selected>USD</option>
+				<option>ETH</option>
+			</select>
+			<label>Количество транзакций в месяц: <span id="__txToMonth">1000</span> транзакций / мес</label>
+			<input id="rangeTXtoMonth" type="range" min="1000" max="40000" step="1000" value="1000">
+			<label>Срок депозита в месяцах: <span id="__tx">2</span> мес</label>
+			<input id="rangeTX" type="range" min="1" max="24" step="1" value="2">
+			<div>
+				<big>ИТОГО:</big>
+				<h1 id="__result">...</h1>
+			</div>
+			
+		</div>
+	</page>
+</content>
+
+<div class="logout" style="display: none;" id="btnLogOut"></div>
+<div style="display: none;" class="template-window">
+	<div class="window">
+		<div class="title">{{title}}</div>
+		<div class="body">{{body}}</div>
+		<div class="footer">{{footer}}</div>
+		<span class="btnExit"></span>
+	</div>
+</div>
+<script type="text/javascript" src="./js/controller.js"></script>
+</body></html>
