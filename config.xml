@@ -22,7 +22,7 @@
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-navigation href="*"/>
-    <icon src="res/icone.png" />
+    <icon src="img/logo-icone.png" />
     <platform name="android">
         <allow-intent href="market:*" />
         <preference name="Orientation" value="portrait" />
