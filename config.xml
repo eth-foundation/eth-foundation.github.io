@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "com.gipertroniks.CryptoHrivnia"
+        id        = "org.fdbb.app.Cabinet"
         version   = "1.0.0">
-    <name>Crypto Hrivnia Lite</name>
+    <name>FDBB Cabinet</name>
     <description>
-        Crypto Hrivnia Lite
+        Furst Decentralize Blockchain Bank
     </description>
-    <author href="http://www.giper-troniks.com" email="support@giper-troniks.com">
-        Giper-Troniks Private Enterprise 2016 ©
+    <author href="http://fdbb.org/" email="support@fdbb.com">
+        FDBB LTD ©
     </author>
     <preference name="permissions" value="none"/>
     <plugin name="cordova-plugin-whitelist" source="npm" spec="~1.2.1"/>
