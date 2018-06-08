@@ -2,7 +2,7 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "org.fdbb.app.Cabinet"
-        version   = "1.0.2">
+        version   = "1.0.3">
     <name>FDBB Cabinet</name>
     <description>First Decentralized Blockchain Bank</description>
     <author href="http://fdbb.org/" email="support@fdbb.com">FDBB LTD ©</author>
@@ -29,6 +29,6 @@
         <allow-intent href="market:*" />
         <preference name="Orientation" value="portrait" />
         <plugin name="cordova-plugin-crosswalk-webview"  />
-        <preference name="xwalkMode" value="lite" />
+        <preference name="xwalkMode" value="default" />
     </platform>
 </widget>
