@@ -30,5 +30,6 @@
         <preference name="Orientation" value="portrait" />
         <plugin name="cordova-plugin-crosswalk-webview"  />
         <preference name="xwalkMode" value="default" />
+        <preference name="xwalkVersion" value="23" />
     </platform>
 </widget>
