@@ -23,8 +23,12 @@
     <allow-intent href="https://*/*" />
     <allow-navigation href="*"/>
     <icon src="img/logo-icone.png" />
+    <preference name='phonegap-version' value='cli-5.1.1' />
     <platform name="android">
+        <plugin name="cordova-plugin-whitelist"  />
         <allow-intent href="market:*" />
         <preference name="Orientation" value="portrait" />
+        <plugin name="cordova-plugin-crosswalk-webview"  />
+        <preference name="xwalkMode" value="lite" />
     </platform>
 </widget>
